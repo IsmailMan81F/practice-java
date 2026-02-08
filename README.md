@@ -27,7 +27,7 @@ git clone https://github.com/YourUsername/LibraryManagementJava.git
 ### 2. Navigate to the project folder:
 
 ```bash
-cd LibraryManagementJava
+cd Library
 ```
 
 ### 3. Compile the code:
