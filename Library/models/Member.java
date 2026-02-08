@@ -1,16 +1,22 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Member {
-    private String name = "unkown";
-    private String memberId = "0";
-    private ArrayList<Book> borrowedBooks = new ArrayList<>();
+    private String name;
+    private String memberId;
+    private List<Book> borrowedBooks = new ArrayList<>();
     public int borrowedBooksNum = 0;
 
     public Member(String name, String memberId) {
         this.name = name;
         this.memberId = memberId;
+    }
+
+    public Member() { // default constructor (if the fields are null)
+        this.name = "unknown";
+        this.memberId = "0";
     }
 
     public void borrowBook(Book b) {
