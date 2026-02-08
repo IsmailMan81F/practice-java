@@ -36,7 +36,7 @@ public class Book {
 
     public void printInfo() {
         String info = "Book : " + this.title + ", Author : " + this.author + ", isbn : " + this.isbn
-                + "\nTotal number of books : " + totalBooks;
+                + "\nTotal number of books : " + totalBooks+ "\n";
         System.out.println(info);
     }
 
