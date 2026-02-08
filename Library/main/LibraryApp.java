@@ -12,15 +12,16 @@ public class LibraryApp {
         Book book3 = new Book("Piardo", "JamaykaSonva", "Mours");
 
         member1.borrowBook(book1);
-        member1.borrowBook(book3);
         member2.borrowBook(book2);
 
-        System.out.println("Member 1 :\n");
+        System.out.println("Borrowed books of member1 : \n");
         member1.printBorrowedBooks();
-        System.out.println("Member 2 :\n");
+        System.out.println("Borrowed books of member2 : \n");
         member2.printBorrowedBooks();
 
-        System.out.println("Total number of borrowed books is : " + Book.totalBooks);
+        System.out.println("Total number of books is : " + Book.totalBooks);
+        int totalBorrowedBooks = member1.borrowedBooksNum + member2.borrowedBooksNum;
+        System.out.println("Total number of borrowed books is : " + totalBorrowedBooks);
 
     }
 }

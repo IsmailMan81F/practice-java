@@ -3,9 +3,10 @@ package models;
 import java.util.ArrayList;
 
 public class Member {
-    private String name;
-    private String memberId;
+    private String name = "unkown";
+    private String memberId = "0";
     private ArrayList<Book> borrowedBooks = new ArrayList<>();
+    public int borrowedBooksNum = 0;
 
     public Member(String name, String memberId) {
         this.name = name;
@@ -14,10 +15,12 @@ public class Member {
 
     public void borrowBook(Book b) {
         borrowedBooks.add(b);
+        borrowedBooksNum++;
     }
 
     public void returnBook(Book b) {
         borrowedBooks.remove(b);
+        borrowedBooksNum--;
     }
 
     public void printBorrowedBooks() {
